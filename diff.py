@@ -14,3 +14,5 @@ gray1 = np.asarray(cv2.cvtColor(im1, cv2.COLOR_RGB2GRAY))
 
 diff = gray1 - gray0
 cv2.imwrite('diff.jpg',diff)
+
+print(np.linalg.norm(diff))
